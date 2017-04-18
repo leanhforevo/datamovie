@@ -4,7 +4,7 @@ var server = require('http').createServer(app);
 var Nightmare = require('nightmare');
 var nightmare = Nightmare();
 var osmosis = require('osmosis');
-server.listen(8888);
+server.listen(process.env.PORT||8888);
 
 app.get('/', function (req, res) {
     var page = req.params.data;
