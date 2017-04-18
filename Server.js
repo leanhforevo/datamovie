@@ -7,18 +7,7 @@ var osmosis = require('osmosis');
 server.listen(process.env.PORT||8888);
 
 app.get('/', function (req, res) {
-    // var page = req.params.data;
-    // var arrData = {};
-    // var typeMovie = 'http://www.phimmoi.net/phim/xac-song-5-the-walking-dead-season-5-1468/xem-phim.html';
-    // console.log('data page:' + page)
-    // res.header("Content-Type", "application/json; charset=utf-8");
-    // getlistespisode(typeMovie, function(data) {
-
-    //     res.end(JSON.stringify(data));
-    // }, function(error)  {
-    //     console.log('error : ', error);
-    //     res.end('error : ');
-    // });
+   
     res.end('You Must add page in end of url!!');
 })
 app.get('/getserver/:type/:urlid', function (req, res) {
