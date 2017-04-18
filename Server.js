@@ -19,7 +19,7 @@ app.get('/', function (req, res) {
     //     console.log('error : ', error);
     //     res.end('error : ');
     // });
-    res.end('You Must add page in end of url ex: phim\2');
+    res.end('You Must add page in end of url!!');
 })
 app.get('/getserver/:type/:urlid', function (req, res) {
     var page = req.params.type + '/' + req.params.urlid;
