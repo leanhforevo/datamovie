@@ -815,15 +815,15 @@ function getEditTopMovie(data) {
     data.map(function(val)  {
         var start = val.image.indexOf("http://image.phimmoi.net");
         var end = val.image.indexOf("poster.small.jpg");
-
         var data = {
             "title": val.title,
             "url": val.url,
             "image": val.image.substring(start, end + 16),
             "itemvn": val.itemvn,
             "itemen": val.itemen,
+            "start": val.start,
             "view": val.view.replace("Lượt xem: ", " "),
-            "start": val.start.replace("rate-vote rate-vote-", "")
+            
         }
         newArray.push(data);
     })
