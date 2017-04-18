@@ -1,0 +1,17 @@
+{
+  "name": "demonodejs",
+  "version": "1.0.0",
+  "description": "no",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "asyncawait": "^1.0.6",
+    "express": "^4.15.2",
+    "nightmare": "^2.10.0",
+    "osmosis": "^1.1.4"
+  }
+}
