@@ -30,32 +30,9 @@ app.get('/getserver/:type/:urlid', function (req, res) {
     });
     // res.end('You Must add page in end of url ex: phim\2');
 })
-app.get('/test', function (req, res) {
-    nightmare
-        .goto('https://www.facebook.com/login')
-        .on('page-title-updated', function (title) {
-            console.log(title);
-        }).inject('.js', 'jquery.js')
-        .type('#email', 'leanh_lanh@yahoo.com')
-        .type('#pass', 'Mat Khau1')
-        .click('#u_0_2')
-        .wait(10000)
-        .goto('https://www.facebook.com/Trinh2795?fref=ufi')
-        .wait(5000)
-        .screenshot("linkedin.png")
-        // .scrollTo(500, 0)
-        .screenshot(function(err, buf)  {
-            console.log('hello from screenshot callback');
-            // do something with the buffer
-            console.log(buf)
-            res.end(buf)
-            return "some value";
-        })
-        .end()
-        .then(function(something) { console.log(something)});
-})
+
 app.get('/phim', function (req, res) {
-    res.end('You Must add page in end of url ex: phim\2');
+    res.end('You Must add page in end of url');
 })
 app.get('/movieDetail/:urlMovie/:urlId', function (req, res) {
     var urlMovie = req.params.urlMovie;
@@ -113,10 +90,10 @@ app.get('/searchtext/:data', function (req, res) {
 })
 
 app.get('/searchadv/:ht/:tl/:qg/:year', function (req, res) {
-    var page = req.params.ht === 'null' ? 'the-loai/' : req.params.ht + '/' +
-        req.params.tl + '/' +
-        req.params.qg === 'null' ? '' : req.params.ht + '/' +
-            req.params.year === 'null' ? '' : req.params.ht + '/';
+    var page = req.params.ht === 'null' ? 'the-loai/' : req.params.ht + '' +
+        req.params.tl + '' +
+        req.params.qg === 'null' ? '' : req.params.ht + '' +
+            req.params.year === 'null' ? '' : req.params.ht + '';
     var arrData = {};
     res.header("Content-Type", "application/json; charset=utf-8");
     getlistSearchText(page, function(data)  {
