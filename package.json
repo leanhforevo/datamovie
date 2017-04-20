@@ -5,10 +5,10 @@
   "description": "no",
   "main": "index.js",
    "dependencies": {
-   "asyncawait": "^1.0.6",
-    "express": "^4.15.2",
-    "nightmare": "^2.10.0",
-    "osmosis": "^1.1.4"
+   "asyncawait": "*",
+    "express": "*",
+    "nightmare": "*",
+    "osmosis": "*"
   },
   "devDependencies": {},
   "scripts": {
