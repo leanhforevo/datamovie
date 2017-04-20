@@ -1,11 +1,10 @@
 {
-  "name": "demosocketio",
+  "name": "testa",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "Server.js",
    "dependencies": {
-    "express": "*",
-    "socket.io": "*"
+    "express": "*"
   },
   "devDependencies": {},
   "scripts": {
