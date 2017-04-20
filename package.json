@@ -1,14 +1,11 @@
-
 {
-  "name": "demonodejs",
+  "name": "demosocketio",
   "version": "1.0.0",
-  "description": "no",
+  "description": "",
   "main": "index.js",
    "dependencies": {
-   "asyncawait": "*",
     "express": "*",
-    "nightmare": "*",
-    "osmosis": "*"
+    "socket.io": "*"
   },
   "devDependencies": {},
   "scripts": {
