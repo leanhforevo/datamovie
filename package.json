@@ -16,7 +16,7 @@
     "start": "node Server.js"
   },
   "engines": {
-      "node": "0.10.31"
+      "node": "6.11.0"
   },
   "author": "Joseph Esteban",
   "license": "ISC"
